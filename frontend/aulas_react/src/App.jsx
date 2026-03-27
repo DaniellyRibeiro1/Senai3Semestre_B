@@ -6,6 +6,7 @@ import Perfil from "./pages/Perfil"
 import Inicio from "./pages/Inicio"
 import Detalhes from "./pages/Detalhes"
 import Contato from "./pages/Contato"
+import Filme from "./pages/Filme"
 
 
 function App() {
@@ -16,6 +17,10 @@ function App() {
                 <Route path="/sobre" element={<Sobre />} />
                 <Route path="*" element={<NotFound />} />
                 <Route path="/perfil/:nome" element={<Perfil />} />
+                 <Route path="/inicio" element={<Inicio />} />
+                 <Route path="/detalhes" element={<Detalhes />} />
+                 <Route path="/contato" element={<Contato />} />
+                 <Route path="/filme/:id" element={<Filme />} />
                
             </Routes>
         </BrowserRouter>
